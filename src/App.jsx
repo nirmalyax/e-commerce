@@ -5,16 +5,20 @@ import {
   Routes,
 } from "react-router-dom";
 import Home from "./pages/home/Home";
+import Order from "./pages/Order/Order";
+import Dashboard from "./pages/admin/dashboard/Dashboard";
+import Cart from "./pages/cart/Cart";
+import Nopage from "./pages/noPage/NoPage";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/order" element={<Order/>} />
+        <Route path="/order" element={<Order/>} />
         <Route path="/cart" element={<Cart/>} />
         <Route path="/dashboard" element={<Dashboard/>} />
-        <Route path="/*" element={<NoPage/>} /> */}
+        <Route path="/*" element={<Nopage/>} />
       </Routes>
     </Router>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import myContext from "../../context/data/myContext";
 
-const myState = (props) => {
+const MyState = (props) => {
   const [mode, setMode] = useState("light");
 
   const toggleMode = () => {
@@ -21,4 +21,4 @@ const myState = (props) => {
   );
 };
 
-export default myState;
+export default MyState;

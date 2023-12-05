@@ -1,39 +1,45 @@
-import React, { Fragment } from 'react';
-import { Menu, Transition } from '@headlessui/react';
-import { ChevronDownIcon } from '@heroicons/react/solid';
+import React, { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/solid";
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(" ");
 }
 
 const Navbar = () => {
   return (
-    <div className='w-full h-20 flex justify-between items-center px-8 text-black'>
-      <h1 className='text-2xl font-bold text-[#00df9a]'>REACT.</h1>
-      <ul className='flex items-center'>
-        <li className='p-4'>
-          <Menu as='div' className='relative inline-block text-left'>
-            <Menu.Button>Services</Menu.Button>
+    <div className="w-full h-20 flex justify-between items-center px-8 text-black">
+      <h1 className="text-2xl font-bold text-[#00df9a]">REACT.</h1>
+      <ul className="flex items-center">
+        <li className="p-4">
+          <Menu as="div" className="relative inline-block text-left">
+            <Menu.Button className={"flex items-center"}>
+              Services{" "}
+              <ChevronDownIcon
+                className="-mr-1 ml-2 h-5 w-5"
+                aria-hidden="true"
+              />
+            </Menu.Button>
             <Transition
               as={Fragment}
-              enter='transition ease-out duration-100'
-              enterFrom='transform opacity-0 scale-95'
-              enterTo='transform opacity-100 scale-100'
-              leave='transition ease-in duration-100'
-              leaveFrom='transform opacity-100 scale-100'
-              leaveTo='transform opacity-0 scale-95'
+              enter="transition ease-out duration-100"
+              enterFrom="transform opacity-0 scale-95"
+              enterTo="transform opacity-100 scale-100"
+              leave="transition ease-in duration-100"
+              leaveFrom="transform opacity-100 scale-100"
+              leaveTo="transform opacity-0 scale-95"
             >
-              <Menu.Items className='origin-top-left absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none'>
-                <div className='py-1'>
+              <Menu.Items className="origin-top-left absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none">
+                <div className="py-1">
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href='#'
+                        href="#"
                         className={classNames(
                           active
-                            ? 'bg-gray-100 text-gray-900'
-                            : 'text-gray-700',
-                          'block px-4 py-2 text-sm'
+                            ? "bg-gray-100 text-gray-900"
+                            : "text-gray-700",
+                          "block px-4 py-2 text-sm"
                         )}
                       >
                         For Companies
@@ -43,12 +49,12 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href='#'
+                        href="#"
                         className={classNames(
                           active
-                            ? 'bg-gray-100 text-gray-900'
-                            : 'text-gray-700',
-                          'block px-4 py-2 text-sm'
+                            ? "bg-gray-100 text-gray-900"
+                            : "text-gray-700",
+                          "block px-4 py-2 text-sm"
                         )}
                       >
                         For Investors
@@ -60,41 +66,41 @@ const Navbar = () => {
             </Transition>
           </Menu>
         </li>
-        <li className='p-4'>Banking</li>
-        <li className='p-4'>Company</li>
-        <li className='p-4'>Resources</li>
-        <li className='p-4'>
-          <Menu as='div' className='relative inline-block text-left'>
+        <li className="p-4">Banking</li>
+        <li className="p-4">Company</li>
+        <li className="p-4">Resources</li>
+        <li className="p-4">
+          <Menu as="div" className="relative inline-block text-left">
             <div>
-              <Menu.Button className='inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500'>
+              <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
                 Account
                 <ChevronDownIcon
-                  className='-mr-1 ml-2 h-5 w-5'
-                  aria-hidden='true'
+                  className="-mr-1 ml-2 h-5 w-5"
+                  aria-hidden="true"
                 />
               </Menu.Button>
             </div>
 
             <Transition
               as={Fragment}
-              enter='transition ease-out duration-100'
-              enterFrom='transform opacity-0 scale-95'
-              enterTo='transform opacity-100 scale-100'
-              leave='transition ease-in duration-75'
-              leaveFrom='transform opacity-100 scale-100'
-              leaveTo='transform opacity-0 scale-95'
+              enter="transition ease-out duration-100"
+              enterFrom="transform opacity-0 scale-95"
+              enterTo="transform opacity-100 scale-100"
+              leave="transition ease-in duration-75"
+              leaveFrom="transform opacity-100 scale-100"
+              leaveTo="transform opacity-0 scale-95"
             >
-              <Menu.Items className='origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none'>
-                <div className='py-1'>
+              <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
+                <div className="py-1">
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href='#'
+                        href="#"
                         className={classNames(
                           active
-                            ? 'bg-gray-100 text-gray-900'
-                            : 'text-gray-700',
-                          'block px-4 py-2 text-sm'
+                            ? "bg-gray-100 text-gray-900"
+                            : "text-gray-700",
+                          "block px-4 py-2 text-sm"
                         )}
                       >
                         Edit
@@ -104,12 +110,12 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href='#'
+                        href="#"
                         className={classNames(
                           active
-                            ? 'bg-gray-100 text-gray-900'
-                            : 'text-gray-700',
-                          'block px-4 py-2 text-sm'
+                            ? "bg-gray-100 text-gray-900"
+                            : "text-gray-700",
+                          "block px-4 py-2 text-sm"
                         )}
                       >
                         Duplicate
@@ -117,16 +123,16 @@ const Navbar = () => {
                     )}
                   </Menu.Item>
                 </div>
-                <div className='py-1'>
+                <div className="py-1">
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href='#'
+                        href="#"
                         className={classNames(
                           active
-                            ? 'bg-gray-100 text-gray-900'
-                            : 'text-gray-700',
-                          'block px-4 py-2 text-sm'
+                            ? "bg-gray-100 text-gray-900"
+                            : "text-gray-700",
+                          "block px-4 py-2 text-sm"
                         )}
                       >
                         Archive
@@ -136,12 +142,12 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href='#'
+                        href="#"
                         className={classNames(
                           active
-                            ? 'bg-gray-100 text-gray-900'
-                            : 'text-gray-700',
-                          'block px-4 py-2 text-sm'
+                            ? "bg-gray-100 text-gray-900"
+                            : "text-gray-700",
+                          "block px-4 py-2 text-sm"
                         )}
                       >
                         Move
@@ -149,16 +155,16 @@ const Navbar = () => {
                     )}
                   </Menu.Item>
                 </div>
-                <div className='py-1'>
+                <div className="py-1">
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href='#'
+                        href="#"
                         className={classNames(
                           active
-                            ? 'bg-gray-100 text-gray-900'
-                            : 'text-gray-700',
-                          'block px-4 py-2 text-sm'
+                            ? "bg-gray-100 text-gray-900"
+                            : "text-gray-700",
+                          "block px-4 py-2 text-sm"
                         )}
                       >
                         Share
@@ -168,12 +174,12 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href='#'
+                        href="#"
                         className={classNames(
                           active
-                            ? 'bg-gray-100 text-gray-900'
-                            : 'text-gray-700',
-                          'block px-4 py-2 text-sm'
+                            ? "bg-gray-100 text-gray-900"
+                            : "text-gray-700",
+                          "block px-4 py-2 text-sm"
                         )}
                       >
                         Add to favorites
@@ -181,16 +187,16 @@ const Navbar = () => {
                     )}
                   </Menu.Item>
                 </div>
-                <div className='py-1'>
+                <div className="py-1">
                   <Menu.Item disabled>
                     {({ active }) => (
                       <a
-                        href='#'
+                        href="#"
                         className={classNames(
                           active
-                            ? 'bg-gray-100 text-gray-900'
-                            : 'text-gray-700',
-                          'block px-4 py-2 text-sm'
+                            ? "bg-gray-100 text-gray-900"
+                            : "text-gray-700",
+                          "block px-4 py-2 text-sm"
                         )}
                       >
                         Delete

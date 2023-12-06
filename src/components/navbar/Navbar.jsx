@@ -8,8 +8,8 @@ function classNames(...classes) {
 
 const Navbar = () => {
   return (
-    <div className="w-full h-20 flex justify-between items-center px-8 text-black">
-      <h1 className="text-2xl font-bold text-[#00df9a]">REACT.</h1>
+    <div className="w-full h-20 flex justify-between items-center px-8 text-black bg-violet-300 rounded-full sticky top-4">
+      <h1 className="text-2xl font-bold text-[#853396]">LOGO.</h1>
       <ul className="flex items-center">
         <li className="p-4">
           <Menu as="div" className="relative inline-block text-left">
@@ -66,13 +66,12 @@ const Navbar = () => {
             </Transition>
           </Menu>
         </li>
-        <li className="p-4">Banking</li>
-        <li className="p-4">Company</li>
+        <li className="p-4">About Us</li>
         <li className="p-4">Resources</li>
         <li className="p-4">
           <Menu as="div" className="relative inline-block text-left">
             <div>
-              <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
+              <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-100 focus:ring-indigo-500">
                 Account
                 <ChevronDownIcon
                   className="-mr-1 ml-2 h-5 w-5"
@@ -103,7 +102,7 @@ const Navbar = () => {
                           "block px-4 py-2 text-sm"
                         )}
                       >
-                        Edit
+                        Create Account
                       </a>
                     )}
                   </Menu.Item>
@@ -118,7 +117,7 @@ const Navbar = () => {
                           "block px-4 py-2 text-sm"
                         )}
                       >
-                        Duplicate
+                        Sign In
                       </a>
                     )}
                   </Menu.Item>
@@ -199,7 +198,7 @@ const Navbar = () => {
                           "block px-4 py-2 text-sm"
                         )}
                       >
-                        Delete
+                        Sign Out
                       </a>
                     )}
                   </Menu.Item>

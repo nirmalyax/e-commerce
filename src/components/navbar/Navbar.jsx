@@ -8,7 +8,7 @@ function classNames(...classes) {
 
 const Navbar = () => {
   return (
-    <div className="w-full h-20 flex justify-between items-center px-8 text-black bg-violet-300 rounded-full sticky top-4">
+    <div className="w-full h-20 flex justify-between items-center px-8 text-white bg-stone-950 sticky">
       <h1 className="text-2xl font-bold text-[#853396]">LOGO.</h1>
       <ul className="flex items-center">
         <li className="p-4">
@@ -34,7 +34,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href="#"
+                        href="/"
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -49,7 +49,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href="#"
+                        href="/"
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -94,7 +94,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href="#"
+                        href="/"
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -109,7 +109,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href="#"
+                        href="/"
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -126,7 +126,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href="#"
+                        href="/"
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -141,7 +141,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href="#"
+                        href="/"
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -158,7 +158,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href="#"
+                        href="/"
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -173,7 +173,7 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href="#"
+                        href="/"
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -190,7 +190,7 @@ const Navbar = () => {
                   <Menu.Item disabled>
                     {({ active }) => (
                       <a
-                        href="#"
+                        href="/"
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
